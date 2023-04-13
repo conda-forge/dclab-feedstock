@@ -31,6 +31,7 @@ requirements:
     - pip
     - python
     - setuptools
+    - setuptools-scm
     - wheel
   run:
     - fcswrite >=0.5.0
