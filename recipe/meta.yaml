@@ -10,7 +10,7 @@ source:
   sha256: 9f2bacb656b74067b9761654e742683ff837c1ed3af6e8103e1a17031b242ec2
 
 build:
-  skip: true  # [py<38 or win]
+  skip: true  # [py<39 or win]
   entry_points:
     - dclab-compress = dclab.cli:compress
     - dclab-condense = dclab.cli:condense
@@ -20,7 +20,7 @@ build:
     - dclab-tdms2rtdc = dclab.cli:tdms2rtdc
     - dclab-verify-dataset = dclab.cli:verify_dataset
   script: {{ PYTHON }} -m pip install . -vv
-  number: 0
+  number: 1
 
 requirements:
   build:
