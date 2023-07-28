@@ -20,7 +20,7 @@ build:
     - dclab-tdms2rtdc = dclab.cli:tdms2rtdc
     - dclab-verify-dataset = dclab.cli:verify_dataset
   script: {{ PYTHON }} -m pip install . -vv
-  number: 0
+  number: 1
 
 requirements:
   build:
