@@ -10,7 +10,7 @@ source:
   sha256: 5837f54894ba11e1d7d13d1639c8aa36e1987c2044290aad8df3bad7078f3e30
 
 build:
-  skip: true  # [py<38 or win]
+  skip: true  # [py<39 or win]
   entry_points:
     - dclab-compress = dclab.cli:compress
     - dclab-condense = dclab.cli:condense
