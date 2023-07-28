@@ -38,6 +38,7 @@ requirements:
     - h5py >=3.0.0
     - hdf5plugin >=3.3.1
     - imageio
+    - imageio-ffmpeg
     - nptdms >=0.23.0
     - {{ pin_compatible('numpy') }}
     - python
@@ -67,6 +68,7 @@ about:
   summary: Library for real-time deformability cytometry (RT-DC)
   license: GPL-2.0-only
   license_file: LICENSE
+  dev_url: https://github.com/DC-analysis/dclab
 
 extra:
   recipe-maintainers:
