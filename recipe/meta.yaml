@@ -44,6 +44,7 @@ requirements:
     - python
     - requests
     - rpy2 >=2.9.4
+    - s3fs
     - scipy >=1.8.0
     - tensorflow >=2.0
 
@@ -64,7 +65,7 @@ test:
     - pip
 
 about:
-  home: https://github.com/ZELLMECHANIK-DRESDEN/dclab
+  home: https://pypi.org/project/dclab
   summary: Library for real-time deformability cytometry (RT-DC)
   license: GPL-2.0-only
   license_file: LICENSE
