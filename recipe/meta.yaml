@@ -1,5 +1,5 @@
 {% set name = "dclab" %}
-{% set version = "0.52.0" %}
+{% set version = "0.53.0" %}
 
 package:
   name: {{ name|lower }}
@@ -7,7 +7,7 @@ package:
 
 source:
   url: https://pypi.io/packages/source/{{ name[0] }}/{{ name }}/dclab-{{ version }}.tar.gz
-  sha256: 5f461d1c42e25ce9ce93af561249efc4fec2dfcef47499175a49bc6b89819938
+  sha256: 4a428d1e07565ec889c2feb9594b4e6bac2ef1da964bcca93d54f866654ef536
 
 build:
   skip: true  # [py<39 or win]
