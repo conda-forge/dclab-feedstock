@@ -1,5 +1,5 @@
 {% set name = "dclab" %}
-{% set version = "0.52.6" %}
+{% set version = "0.54.2" %}
 
 package:
   name: {{ name|lower }}
@@ -7,7 +7,7 @@ package:
 
 source:
   url: https://pypi.io/packages/source/{{ name[0] }}/{{ name }}/dclab-{{ version }}.tar.gz
-  sha256: edd566e33c830a2e734576175e57c9aac0207a8f7e827e69f6a18fa1e3ac836c
+  sha256: 2b31298c2e4689785f0fa5dabfbfa3cfe21e0e72157c0f05b78f027ff0550574
 
 build:
   skip: true  # [py<39 or win]
@@ -39,6 +39,7 @@ requirements:
     - hdf5plugin >=3.3.1
     - imageio
     - imageio-ffmpeg
+    - importlib-resources
     - nptdms >=0.23.0
     - {{ pin_compatible('numpy') }}
     - python
