@@ -49,6 +49,11 @@ requirements:
     - scipy >=1.10.0
     - tensorflow >=2.0
     - urllib3 >=2
+    # These packages are picked up by the bot, but are only used in scripts or examples
+    # - lmfit
+    # - matplotlib
+    # - opencv
+    # - scikit-image
 
 test:
   imports:
