@@ -27,7 +27,7 @@ requirements:
     - {{ compiler('c') }}
   host:
     - cython
-    - numpy >=1.21
+    - numpy >=1.21,<2
     - pip
     - python
     - setuptools
@@ -35,18 +35,18 @@ requirements:
   run:
     - fcswrite >=0.5.0
     - fsspec >=2023.10.0
-    - h5py >=3.0.0
-    - hdf5plugin >=3.3.1
+    - h5py >=3.0.0,<4
+    - hdf5plugin >=3.3.1,<5
     - imageio
     - imageio-ffmpeg
     - importlib-resources >=6.0
     - nptdms >=0.23.0
     - {{ pin_compatible('numpy') }}
     - python
-    - requests >=2.31
+    - requests >=2.31,<3
     - rpy2 >=2.9.4
     # - s3fs >=2023.10.0  # Optional
-    - scipy >=1.10.0
+    - scipy >=1.10.0,<2
     - tensorflow >=2.0
     - urllib3 >=2
     # These packages are picked up by the bot, but are only used in scripts or examples
