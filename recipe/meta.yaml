@@ -1,5 +1,5 @@
 {% set name = "dclab" %}
-{% set version = "0.55.2" %}
+{% set version = "0.55.3" %}
 
 package:
   name: {{ name|lower }}
@@ -7,7 +7,7 @@ package:
 
 source:
   url: https://pypi.io/packages/source/{{ name[0] }}/{{ name }}/dclab-{{ version }}.tar.gz
-  sha256: 11cc18d0d424a2854f2c342f3d7fe3ff7117823be95b752f7c53af9358cd8407
+  sha256: 8cf2b6336d9c3e7055ea30cde4e85fc7ca73dbb310a1038eb377d5002f405f3b
 
 build:
   skip: true  # [py<39 or win]
@@ -27,7 +27,7 @@ requirements:
     - {{ compiler('c') }}
   host:
     - cython
-    - numpy >=1.21
+    - numpy >=1.21,<2
     - pip
     - python
     - setuptools
@@ -35,18 +35,18 @@ requirements:
   run:
     - fcswrite >=0.5.0
     - fsspec >=2023.10.0
-    - h5py >=3.0.0
-    - hdf5plugin >=3.3.1
+    - h5py >=3.0.0,<4
+    - hdf5plugin >=3.3.1,<5
     - imageio
     - imageio-ffmpeg
     - importlib-resources >=6.0
     - nptdms >=0.23.0
     - {{ pin_compatible('numpy') }}
     - python
-    - requests >=2.31
+    - requests >=2.31,<3
     - rpy2 >=2.9.4
     # - s3fs >=2023.10.0  # Optional
-    - scipy >=1.10.0
+    - scipy >=1.10.0,<2
     - tensorflow >=2.0
     - urllib3 >=2
     # These packages are picked up by the bot, but are only used in scripts or examples
