@@ -5,7 +5,7 @@ Feedstock license: [BSD-3-Clause](https://github.com/conda-forge/dclab-feedstock
 
 Home: https://pypi.org/project/dclab
 
-Package license: GPL-2.0-only
+Package license: GPL-2.0-or-later
 
 Summary: Library for real-time deformability cytometry (RT-DC)
 
