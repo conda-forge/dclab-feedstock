@@ -6,7 +6,7 @@ package:
   version: {{ version }}
 
 source:
-  url: https://pypi.io/packages/source/{{ name[0] }}/{{ name }}/dclab-{{ version }}.tar.gz
+  url: https://pypi.org/packages/source/{{ name[0] }}/{{ name }}/dclab-{{ version }}.tar.gz
   sha256: c0613dcf189ff63fa0d30888d9e287294683744f74d247c0dcf2f2622612798a
 
 build:
@@ -20,7 +20,7 @@ build:
     - dclab-tdms2rtdc = dclab.cli:tdms2rtdc
     - dclab-verify-dataset = dclab.cli:verify_dataset
   script: {{ PYTHON }} -m pip install . -vv
-  number: 1
+  number: 2
 
 requirements:
   build:
@@ -42,7 +42,6 @@ requirements:
     - imageio-ffmpeg
     - importlib-resources >=6.0
     - nptdms >=0.23.0
-    - {{ pin_compatible('numpy') }}
     - python
     - requests >=2.31,<3
     - rpy2 >=2.9.4
